@@ -1,0 +1,30 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.satelliteCard {
+    border: 2px solid #2040A0;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+    background-color: #ffffff;
+    color: #2040A0;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.satelliteCard:hover {
+    border-color: #888888;
+}
+
+.satelliteCard img {
+    border: 2px solid #2040A0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}

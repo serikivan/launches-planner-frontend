@@ -1,0 +1,30 @@
+:root {
+  --active_color: black;
+  --additional_color: #2050A0;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.breadcrumbs * {
+  color: var(--additional_color);
+  transition: 0.5s;
+}
+
+.breadcrumbs *:not(.slash):hover {
+  color: var(--active_color);
+}
+
+.breadcrumbs li {
+  position: relative;
+  cursor: auto;
+}
+
+.breadcrumbs li:last-child {
+  color: var(--active_color);
+}

@@ -1,0 +1,35 @@
+.satelliteCard {
+    border: 2px solid #2050A0;
+    border-radius: 30px !important;
+    background-color: #ffffff;
+    color: #2050A0 !important;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+    padding: 15px;
+    text-align: left !important;
+    cursor: pointer;
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+.satelliteCard:hover {
+    border-color: #808080;
+}
+
+.satelliteCard img {
+    border: 2px solid #2050A0;
+    border-radius: 30px !important;;
+    width: 100%;
+    height: 200px;
+    object-fit: contain !important;
+    margin-bottom: 10px;
+}
+
+
+.satelliteCardLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.satelliteCardLink:hover {
+    text-decoration: none;
+}

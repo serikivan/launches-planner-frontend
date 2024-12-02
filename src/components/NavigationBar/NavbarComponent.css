@@ -1,0 +1,39 @@
+/* Общий стиль для навбара */
+.navbar {
+  padding: 10px 20px; /* Увеличиваем отступы для более просторного вида */
+  font-family: 'Roboto', sans-serif; /* Выбор шрифта для навбара */
+  font-weight: 500; /* Средняя жирность шрифта */
+}
+
+/* Стили для текста на бренде (название сайта) */
+.navbar-brand {
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  font-size: 1.8rem; /* Увеличиваем размер шрифта для логотипа */
+  color: #ffffff !important; /* Белый цвет для текста */
+  font-weight: 700; /* Жирный шрифт */
+  letter-spacing: 1px; /* Немного увеличиваем расстояние между буквами */
+  text-transform: uppercase; /* Делаем все буквы заглавными */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #7d84af !important; /* Цвет при наведении на логотип */
+}
+
+/* Стили для навигационных ссылок */
+.navbar-text-white {
+  color: #ffffff !important; /* Белый цвет текста */
+  font-size: 1.1rem; /* Немного увеличиваем размер шрифта */
+  text-transform: uppercase; /* Преобразуем в верхний регистр */
+  font-weight: 500;
+  transition: color 0.3s ease; /* Плавный переход */
+}
+
+.navbar-text-white:hover {
+  color: #7D84AFFF !important; /* Цвет при наведении */
+}
+
+/* Стили для гамбургера (иконки меню на мобильных устройствах) */
+.navbar-toggler-icon {
+  background-color: #ffffff !important; /* Белая иконка гамбургера */
+}
