@@ -19,7 +19,10 @@ const SatellitesListPage: FC = () => {
             setSatellites(response.satellites)
             setLoading(false)
         }).catch(() => {
-            setSatellites(SATELLITES_MOCK.satellites)
+            const filteredMock = SATELLITES_MOCK.satellites.filter((satellite) =>
+                    satellite.title.toLowerCase().includes(searchValue.toLowerCase())
+                );
+            setSatellites(filteredMock);
             setLoading(false)
         })
 }
@@ -41,7 +44,14 @@ const SatellitesListPage: FC = () => {
             placeholder="       Поиск спутника по названию"
             />
 
-            {loading && <div className="loadingBg"><Spinner animation="border" /></div>}
+            {loading && (
+                <div className="loadingBg d-flex justify-content-center align-items-center">
+                    <Spinner
+                        animation="border"
+                        className="custom-spinner"
+                    />
+                </div>
+            )}
 
             <Container className="card-container">
             <Row md={3} className="g-4 justify-content-center w-100" style={{marginTop: '10px'}}>

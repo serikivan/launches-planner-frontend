@@ -12,6 +12,14 @@
     text-align: center;
 }
 
+.custom-spinner {
+    color: #2040A0;
+    width: 60px;
+    height: 60px;
+    border-width: 6px;
+    margin: 20px;
+}
+
 .satelliteTitle {
     color: #2040A0;
     font-family: "Segoe UI", "Trebuchet MS", sans-serif;

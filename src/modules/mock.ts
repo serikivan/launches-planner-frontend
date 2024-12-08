@@ -1,8 +1,6 @@
 import { satelliteResult } from "./LaunchesAPI";
 
 export const SATELLITES_MOCK: satelliteResult = {
-        "LaunchID": "",
-        "SatelliteCount": 0,
         "satellites": [
             {
                 'satellite_id': 1,

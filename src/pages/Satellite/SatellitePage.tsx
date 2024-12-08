@@ -57,9 +57,12 @@ export const SatellitePage: FC = () => {
                 </div>
             </div>
         ) : (
-            <div className="page_loader_block">
-                <Spinner animation="border"/>
-            </div>
+                <div className="loadingBg d-flex justify-content-center align-items-center">
+                    <Spinner
+                        animation="border"
+                        className="custom-spinner"
+                    />
+                </div>
         )}
     </div>
 );
