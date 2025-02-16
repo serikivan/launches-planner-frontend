@@ -1,0 +1,15 @@
+{
+  "name": "Vostochniy Launches",
+  "short_name": "Launches",
+  "start_url": "/launches-planner-frontend/",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#4d00ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/launches-planner-frontend/logo.svg",
+      "type": "image/svg", "sizes": "192x192"
+    }
+  ]
+}
