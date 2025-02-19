@@ -4,12 +4,16 @@
   "start_url": "/launches-planner-frontend/",
   "display": "standalone",
   "background_color": "#fdfdfd",
-  "theme_color": "#4d00ff",
+  "theme_color": "#2050a0",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/launches-planner-frontend/logo.svg",
-      "type": "image/svg", "sizes": "192x192"
+      "src": "/launches-planner-frontend/logo192.png",
+      "type": "image/png", "sizes": "192x192"
+    },
+    {
+      "src": "/launches-planner-frontend/logo512.png",
+      "type": "image/png", "sizes": "512x512"
     }
   ]
 }
