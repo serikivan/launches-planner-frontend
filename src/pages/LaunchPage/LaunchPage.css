@@ -1,0 +1,40 @@
+.launch-page {
+    padding: 20px 0;
+}
+
+.launch-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin: 0 20px;
+}
+
+.launch-details h4 {
+    color: #2050A0;
+    margin-bottom: 20px;
+}
+
+.launch-details p {
+    margin-bottom: 10px;
+}
+
+.launch-details strong {
+    color: #555;
+}
+
+.form-control:read-only {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+}
+
+.satellites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.satellite-card-container {
+    width: 100%;
+}

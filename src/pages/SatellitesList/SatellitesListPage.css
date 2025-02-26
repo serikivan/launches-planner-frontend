@@ -1,0 +1,78 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.custom-spinner {
+    color: #2040A0;
+    width: 60px;
+    height: 60px;
+    border-width: 6px;
+    margin: 20px;
+}
+
+.satelliteCard {
+    border: 2px solid #2040A0;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+    background-color: #ffffff;
+    color: #2040A0;
+    text-align: center;
+    padding: 15px !important; 
+    font-family: Arial, sans-serif;
+}
+
+.satelliteCard:hover {
+    border-color: #888888;
+}
+
+.satelliteCard img {
+    border: 2px solid #2040A0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.satellites-section {
+    padding: 20px;
+}
+
+.satellites-header {
+    margin-bottom: 30px;
+}
+
+.search-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-input {
+    border-radius: 20px 0 0 20px;
+    border: 2px solid #2050a0;
+    border-right: none;
+}
+
+.search-button {
+    border-radius: 0 20px 20px 0;
+    border: 2px solid #2050a0;
+    background: #2050a0;
+    color: white;
+}
+
+.launch-button {
+    background: #2050a0;
+    border-color: #2050a0;
+    position: relative;
+}
+
+.satellite-count-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    background: #dc3545;
+}
