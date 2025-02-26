@@ -1,0 +1,68 @@
+.satelliteCard {
+    border: 2px solid #2050A0;
+    border-radius: 30px !important;
+    background-color: #ffffff;
+    color: #2050A0 !important;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+    padding: 15px;
+    text-align: left !important;
+    cursor: pointer;
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+    width: 100%; /* Занимает всю ширину родительского контейнера */
+    max-width: 300px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрируем карточку */
+}
+
+.satelliteCardTitle {
+    text-align: center;
+}
+
+.satelliteCard:hover {
+    border-color: #808080;
+}
+
+.satelliteCard img {
+    border: 2px solid #2050A0;
+    border-radius: 30px !important;
+    width: 100%;
+    height: 200px;
+    object-fit: contain !important;
+    margin-bottom: 10px;
+}
+
+.satelliteCardLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.satelliteCardLink:hover {
+    text-decoration: none;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .satelliteCard {
+    max-width: 250px; /* Уменьшаем максимальную ширину на планшетах */
+    padding: 10px; /* Уменьшаем отступы */
+      font-size: 80%;
+  }
+
+  .satelliteCard img {
+    height: 150px; /* Уменьшаем высоту изображения */
+  }
+}
+
+.satelliteCardTitle {
+      font-size: 120% !important;
+  }
+
+@media (max-width: 480px) {
+  .satelliteCard {
+    max-width: 200px; /* Еще меньше максимальная ширина на мобильных устройствах */
+    padding: 8px; /* Еще меньше отступы */
+  }
+
+  .satelliteCard img {
+    height: 120px; /* Еще меньше высота изображения */
+  }
+}

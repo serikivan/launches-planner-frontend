@@ -1,0 +1,46 @@
+:root {
+  --active_color: black;
+  --additional_color: #2050A0;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap; /* Переносим элементы на новую строку, если не хватает места */
+}
+
+.breadcrumbs * {
+  color: var(--additional_color);
+  transition: 0.5s;
+}
+
+.breadcrumbs *:not(.slash):hover {
+  color: var(--active_color);
+}
+
+.breadcrumbs li {
+  position: relative;
+  cursor: auto;
+}
+
+.breadcrumbs li:last-child {
+  color: var(--active_color);
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .breadcrumbs {
+    padding: 15px; /* Уменьшаем отступы на мобильных устройствах */
+    gap: 8px; /* Уменьшаем расстояние между элементами */
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumbs {
+    padding: 10px; /* Еще меньше отступы */
+    gap: 5px; /* Еще меньше расстояние между элементами */
+  }
+}

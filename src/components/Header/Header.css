@@ -1,0 +1,82 @@
+/* Общий стиль для навбара */
+.navbar {
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+/* Стили для бренда (названия сайта) */
+.navbar-brand {
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #7d84af !important;
+}
+
+/* Стили для навигационных ссылок */
+.navbar-text-white {
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-text-white:hover {
+  color: #7D84AFFF !important;
+}
+
+/* Стили для кастомного гамбургера */
+.custom-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-hamburger {
+  width: 40px; /* Базовый размер */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-text-white {
+    font-size: 1rem;
+  }
+
+  .custom-hamburger {
+    width: 30px; /* Уменьшаем на планшетах */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-text-white {
+    font-size: 0.9rem;
+  }
+
+  .custom-hamburger {
+    width: 25px; /* Еще меньше на мобильных */
+  }
+}

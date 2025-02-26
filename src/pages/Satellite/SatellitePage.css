@@ -1,0 +1,52 @@
+.satelliteTitle {
+    color: #2040A0;
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.satelliteRow {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.satelliteImageWrapper {
+    flex: 0 0 auto;
+    width: 40%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.satelliteImage {
+    width: 100%;
+    border-radius: 30px;
+    border: 3px solid #2040A0;
+}
+
+.satelliteDetails {
+    flex: 1;
+    color: #333333;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .satelliteRow {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .satelliteImageWrapper {
+        width: 80%;
+    }
+
+    .satelliteDetails {
+        width: 85%;
+        text-align: left;
+    }
+}

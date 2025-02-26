@@ -1,0 +1,51 @@
+.homeBackground {
+  background: white; /* Градиент с синими оттенками */
+  color: white; /* Белый цвет текста для контраста */
+  height: 100vh; /* Заполнение всего экрана */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.homeContainer {
+  max-width: 1200px; /* Ограничение ширины для контента */
+  padding: 40px;
+  background-color: #2040A0;
+  border-radius: 15px; /* Скругленные углы */
+}
+
+.homeRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textCol {
+  padding: 20px;
+}
+
+.homeTitle {
+  font-size: 2rem; /* Размер шрифта для заголовка */
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+.homeDescription {
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .homeTitle {
+    font-size: 170%;
+  }
+  .homeDescription {
+    font-size: 120%;
+  }
+}
