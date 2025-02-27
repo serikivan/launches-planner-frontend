@@ -1,0 +1,83 @@
+.homeBackground {
+  height: calc(100vh - 56px); /* 56px is navbar height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden; /* Prevent scrolling */
+  position: fixed; /* Fix the background */
+  top: 56px; /* Account for navbar */
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.homeContainer {
+  max-width: 1200px; /* Ограничение ширины для контента */
+  padding: 40px;
+  background: radial-gradient(
+    circle at center,
+    rgba(32, 80, 160, 0.9) 0%,
+    rgba(32, 80, 160, 0.7) 50%,
+    rgba(32, 80, 160, 0.5) 100%
+  );
+  border: 3px solid rgb(32, 80, 160);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.homeRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textCol {
+  padding: 20px;
+}
+
+.textOverlay {
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.homeTitle {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.homeDescription {
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .homeTitle {
+    font-size: 170%;
+  }
+  .homeDescription {
+    font-size: 120%;
+  }
+}
+
+.homeImage {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imageRow {
+  margin-top: 2rem;
+}

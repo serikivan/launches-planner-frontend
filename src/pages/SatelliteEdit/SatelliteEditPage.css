@@ -1,0 +1,32 @@
+.service-edit-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-edit-form h2 {
+    color: #2050a0;
+    margin-bottom: 1.5rem;
+}
+
+.form-control:focus {
+    border-color: #2050a0;
+    box-shadow: 0 0 0 0.2rem rgba(32, 80, 160, 0.25);
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+    color: white;
+} 

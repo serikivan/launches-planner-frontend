@@ -1,0 +1,30 @@
+.service-create-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-create-form h2 {
+    color: #2050a0;
+    margin-bottom: 1.5rem;
+}
+
+.form-control:focus {
+    border-color: #2050a0;
+    box-shadow: 0 0 0 0.2rem rgba(32, 80, 160, 0.25);
+}
+
+.btn-primary {
+    background-color: #2050a0;
+    border-color: #2050a0;
+}
+
+.btn-primary:hover {
+    background-color: #1a4080;
+    border-color: #1a4080;
+}
+
+textarea.form-control {
+    min-height: 100px;
+} 

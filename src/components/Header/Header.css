@@ -1,0 +1,112 @@
+.header {
+  background-color: #2050a0;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #000;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Ссылка-кнопка для логотипа */
+.logo-button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #fff;
+  transition: 0.1s ease-in-out;
+  margin: 20px 20px;
+}
+
+/* Увеличенный шрифт для кнопок Запуски и Добавить */
+.logo-button.larger-font {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Отключаем эффекты при наведении */
+.logo-button:hover,
+.logo-button:focus {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  transform: scale(1.1);
+}
+
+/* Стили для кнопки бургер-меню */
+.navbar-toggler {
+  border-width: 2px;
+  border-color: #fff;
+}
+
+/* Белые полоски в бургер-меню */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Стили для кнопки выхода - теперь как у logo-button */
+.logout-button {
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff !important;
+  transition: 0.1s ease-in-out;
+  margin: 20px 20px;
+  padding: 0;
+  font-weight: normal;
+}
+
+.logout-button:hover,
+.logout-button:focus,
+.logout-button:active {
+  background-color: transparent !important;
+  color: #fff !important;
+  text-decoration: none;
+  outline: none;
+  transform: scale(1.1);
+  box-shadow: none !important;
+}
+
+/* Контейнер для кнопок профиля и выхода */
+.user-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем по горизонтали */
+}
+
+.user-controls .logo-button,
+.user-controls .logout-button {
+  margin: 5px 0;
+}
+
+/* Выравнивание в бургер-меню */
+@media (max-width: 991px) {
+  .navbar-collapse .nav {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .logo-button, 
+  .logout-button {
+    margin: 10px 0;
+    padding-left: 0;
+  }
+  
+  .user-controls {
+    width: 100%;
+    align-items: flex-start; /* В мобильной версии выравниваем по левому краю */
+  }
+  
+  .user-controls .logo-button,
+  .user-controls .logout-button {
+    margin: 5px 0;
+  }
+}

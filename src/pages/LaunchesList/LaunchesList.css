@@ -1,0 +1,98 @@
+.launches-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+
+.launches-table td {
+    vertical-align: middle;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .launches-table {
+        font-size: 14px;
+    }
+    
+    .launches-table .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 12px;
+    }
+}
+
+.filter-section {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.filter-section .form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.filter-section .form-control,
+.filter-section .form-select {
+    border-color: #dee2e6;
+}
+
+.filter-section .form-control:focus,
+.filter-section .form-select:focus {
+    border-color: #2050a0;
+    box-shadow: 0 0 0 0.2rem rgba(32, 80, 160, 0.25);
+}
+
+@media (max-width: 768px) {
+    .filter-section {
+        padding: 1rem;
+    }
+    
+    .filter-section .btn {
+        margin-top: 1rem;
+    }
+}
+
+.launches-table .btn-link {
+    color: #2050a0;
+    text-decoration: none;
+    padding: 0;
+}
+
+.launches-table .btn-link:hover {
+    color: #163a75;
+    text-decoration: underline;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.qr-image {
+    max-width: 250px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.qr-image.enlarged {
+    max-width: 100%;
+    max-height: 70vh;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    justify-content: center;
+    border-top: none;
+    padding-top: 0;
+}
