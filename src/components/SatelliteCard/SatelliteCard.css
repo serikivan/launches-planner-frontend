@@ -1,0 +1,113 @@
+.satelliteCard {
+    border: 2px solid #2050A0;
+    border-radius: 30px !important;
+    background-color: #ffffff;
+    border-color: #6c757d !important;
+    border-width: 1px !important;
+    color: #2050A0 !important;
+    transition: border-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Добавлен transition для box-shadow */
+    padding: 15px;
+    text-align: left !important;
+    cursor: pointer;
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.satelliteCardTitle {
+    text-align: center;
+}
+
+.satelliteCard:hover {
+    box-shadow: 0 4px 4px rgba(32, 80, 160, 0.3); /* Тень при наведении */
+    transform: scale(1.001); /* Небольшое увеличение */
+}
+
+/* Стили изображения только для обычных карточек (не на странице запуска) */
+.satelliteCard:not(.launchPageCard) img {
+    border: 2px solid #2050A0;
+    border-radius: 30px !important;
+    width: 100%;
+    height: 200px;
+    object-fit: contain !important;
+    margin-bottom: 10px;
+}
+
+.satelliteCardLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.satelliteCardLink:hover {
+    text-decoration: none;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .satelliteCard:not(.launchPageCard) {
+        max-width: 250px;
+        padding: 10px;
+        font-size: 80%;
+    }
+
+    .satelliteCard:not(.launchPageCard) img {
+        height: 150px;
+    }
+}
+
+.satelliteCardTitle {
+    font-size: 120% !important;
+}
+
+@media (max-width: 480px) {
+    .satelliteCard:not(.launchPageCard) {
+        max-width: 200px;
+        padding: 8px;
+    }
+
+    .satelliteCard:not(.launchPageCard) img {
+        height: 120px;
+    }
+}
+
+/* Add new media query for extra large screens */
+@media (min-width: 2560px) {
+    .satelliteCard {
+        max-width: 400px;
+    }
+
+    .satelliteCard img {
+        height: 250px;
+    }
+
+    .satelliteCardTitle {
+        font-size: 140% !important;
+    }
+}
+
+/* Стили для очень широких экранов */
+@media (min-width: 1600px) and (max-width: 2559px) {
+    .satelliteCard {
+        max-width: 350px;
+    }
+
+    .satelliteCard img {
+        height: 220px;
+    }
+}
+
+/* Стили для сверхшироких экранов */
+@media (min-width: 2560px) {
+    .satelliteCard {
+        max-width: 400px;
+    }
+
+    .satelliteCard img {
+        height: 250px;
+    }
+
+    .satelliteCardTitle {
+        font-size: 140% !important;
+    }
+}

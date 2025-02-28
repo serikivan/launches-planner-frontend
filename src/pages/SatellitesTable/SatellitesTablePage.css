@@ -1,0 +1,43 @@
+.table {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+    background-color: #2050a0;
+    color: white;
+    border-color: #1a4080;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-outline-primary {
+    color: #2050a0 !important;
+    border-color: #2050a0;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2050a0 !important;
+    border-color: #2050a0;
+    color: white !important;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+/* Добавляем стили для группы кнопок */
+.d-flex.gap-2 {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+} 

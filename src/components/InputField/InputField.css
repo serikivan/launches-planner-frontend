@@ -1,0 +1,65 @@
+.inputField {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    position: relative;
+}
+
+.inputField input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    border: 2px solid #2050a0;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.inputField input:focus {
+    border-color: #3070c0;
+}
+
+.inputField input::placeholder {
+    color: #999;
+}
+
+.inputField input:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.searchButton {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2050a0;
+    font-size: 18px;
+}
+
+.searchIcon {
+    color: #2050a0;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .inputField input {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inputField input {
+        height: 35px; /* Еще меньше высота для очень маленьких экранов */
+        font-size: 12px; /* Еще меньше размер шрифта */
+    }
+
+    .searchIcon {
+        font-size: 14px; /* Еще меньше размер иконки */
+    }
+}
