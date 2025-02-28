@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Запуск космических аппаратов с космодрома Восточный
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Это веб-приложение предоставляет пользователям возможность просматривать предстоящие запуски космических аппаратов, искать их по названию и изучать детальную информацию о каждом запуске. Приложение разработано с использованием React для фронтенда и Django для бэкенда.
 
-Currently, two official plugins are available:
+## Ссылки
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Фронтенд:
+- [GitHub Pages](https://serikivan.github.io/launches-planner-frontend/)
+- [Макет Figma](https://www.figma.com/design/Tn0CIrEdLbtX7ZLCwSYVpt/VostokLaunch?node-id=4-4&m=dev&t=j8mpGheGPHmR8ffB-1)
 
-## Expanding the ESLint configuration
+### Бэкенд:
+- [SSR на mock-данных](https://github.com/serikivan/launches-planner-backend/tree/SSR)
+- [Модели и Django-ORM](https://github.com/serikivan/launches-planner-backend/tree/ORM)
+- [REST API](https://github.com/serikivan/launches-planner-backend/tree/DRF)
+- [Авторизация](https://github.com/serikivan/launches-planner-backend/tree/AUTH)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Основные функции
 
-- Configure the top-level `parserOptions` property like this:
+- **Просмотр запусков** — на главной странице отображаются все запланированные запуски космических аппаратов.
+- **Поиск запусков** — пользователи могут искать запуски по названию космического аппарата с помощью строки поиска.
+- **Детальная информация** — для каждого запуска доступна подробная информация, включая порядок вывода космических аппаратов и изображение каждого космического аппарата.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Используемые технологии
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Фронтенд:
+- **React** — библиотека для создания пользовательских интерфейсов.
+- **TypeScript** — язык программирования, добавляющий статическую типизацию в JavaScript, что помогает улучшить качество кода и выявить ошибки на ранних этапах.
+- **React Router** — библиотека для управления маршрутизацией в React-приложениях.
+- **React Bootstrap** — набор компонентов для React, основанный на фреймворке Bootstrap.
+- **Поддержка PWA** — может работать в автономном режиме после установки файлов приложения на устройство.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Бэкенд:
+- **Django** — мощный фреймворк для разработки веб-приложений на Python.
+- **Django REST Framework** — инструмент для создания API в Django, упрощающий разработку RESTful сервисов.
